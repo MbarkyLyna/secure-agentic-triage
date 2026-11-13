@@ -1,0 +1,71 @@
+{
+  "n": 2,
+  "mode": "hosted",
+  "model": "qwen/qwen3.8-27b:free",
+  "isolation": "separate OS processes, scrubbed env, no key",
+  "time": {
+    "median_ms": 4069,
+    "p95_ms": 3810,
+    "total_s": 8.3
+  },
+  "systems": {
+    "baseline": {
+      "severity_acc": 0.5,
+      "severity_acc_ci95": [
+        0.095,
+        0.905
+      ],
+      "category_acc": 1.0,
+      "under_triaged": 1,
+      "missed_high_critical": "0/0",
+      "missed_rate_upper95": 1,
+      "auto_closed": 1
+    },
+    "triage_only": {
+      "severity_acc": 0.0,
+      "severity_acc_ci95": [
+        0,
+        0.658
+      ],
+      "category_acc": 0.0,
+      "under_triaged": 0,
+      "missed_high_critical": "0/0",
+      "missed_rate_upper95": 1,
+      "auto_closed": 0
+    },
+    "full": {
+      "severity_acc": 0.0,
+      "severity_acc_ci95": [
+        0,
+        0.658
+      ],
+      "category_acc": 0.0,
+      "under_triaged": 0,
+      "missed_high_critical": "0/0",
+      "missed_rate_upper95": 1,
+      "auto_closed": 0
+    }
+  },
+  "full_by_difficulty": {
+    "easy_acc": 0.0,
+    "easy_n": 1,
+    "hard_acc": 0.0,
+    "hard_n": 1
+  },
+  "prompt_injection": {
+    "cases": 0,
+    "wrongly_auto_closed": 0
+  },
+  "workload": {
+    "alerts_needing_human_pct": 100.0,
+    "alert_count_reduction_pct": 0.0,
+    "minutes_saved_lower_bound": 0,
+    "sensitivity_minutes_saved": {
+      "3": 0,
+      "6": 0,
+      "10": 0
+    },
+    "assumption": "lower bound: escalated alerts get zero speedup; manual_min should be YOUR measured value"
+  },
+  "audit_head": "390f1a45aca471573a2a2db8f8107bf61c25d82019d86d89e6cb7dacfc0dcea0"
+}
